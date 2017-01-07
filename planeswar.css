@@ -1,0 +1,100 @@
+/*飞机大战*/
+
+*{margin: 0;padding: 0;}
+body{font-family: "微软雅黑";}
+@font-face {
+  font-family: 'iconfont';  /* project id："190984" */
+  src: url('http://at.alicdn.com/t/font_bo5nfxgyyjgfzuxr.eot');
+  src: url('http://at.alicdn.com/t/font_bo5nfxgyyjgfzuxr.eot?#iefix') format('embedded-opentype'),
+  url('http://at.alicdn.com/t/font_bo5nfxgyyjgfzuxr.woff') format('woff'),
+  url('http://at.alicdn.com/t/font_bo5nfxgyyjgfzuxr.ttf') format('truetype'),
+  url('http://at.alicdn.com/t/font_bo5nfxgyyjgfzuxr.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family: iconfont;
+  font-style: normal;
+  font-size: 40px;
+}
+.dead{
+  left: 450px;
+  position: absolute;
+  z-index: -1;
+  font-family: iconfont;
+  font-style: normal;
+  font-size: 40px;
+  color: red;
+}
+.died{
+  left: 450px;
+  position: absolute;
+  z-index: -1;
+  font-family: iconfont;
+  font-style: normal;
+  font-size: 40px;
+  color: red;
+}
+#hidden,#top,#warplace,#footer{
+  width: 940px;
+  margin: 0 auto;
+
+}
+#hidden{
+  height: 50px;
+  background: #fff;
+}
+#top{
+	height: 80px;
+  text-align: center;
+	background: #e3e4e5;
+  line-height: 100px;
+  border: 1px solid #272822;
+  border-bottom: none;
+  font-family: "微软雅黑";
+  font-weight: bold;
+}
+#warplace{
+	height: 600px;
+	background: #e3e4e5;
+	border: 1px solid #272822;
+  position: relative;
+  z-index: -2;
+}
+#footer{
+  background: #e3e4e5;
+  text-align: center;
+  border: 1px solid #272822;
+  border-top: none;
+  font-weight: 800;
+}
+.planes{
+  left: 450px;
+  top: -50px;
+  position: absolute;
+  z-index: -2;
+  font-family: iconfont;
+  font-style: normal;
+  font-size: 40px;
+}
+#person{
+  position: absolute;
+  left: 450px;
+  top: 550px;
+}
+.bullets{
+  position: absolute;
+  font-size: 40px;
+}
+#overbox{
+  background: #666;
+  width: 300px;
+  height: 150px;
+  margin: 300px auto auto auto;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  line-height: 150px;
+  font-size: 30px;
+  border: 2px solid #272822;
+  border-radius: 15px;
+  display: none;
+}
